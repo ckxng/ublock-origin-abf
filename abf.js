@@ -565,7 +565,7 @@
 						//alert(message(false, [origin, sessionProtection, readsFormatted]))
 					}
 					else if (!unknown) {
-						permission = confirm(message(true, [url, sessionProtection, readsFormatted]))
+						permission = false; // default to deny fingerprinting // confirm(message(true, [url, sessionProtection, readsFormatted]))
 					} 
 					if (permission) {
 						sessionStorage.setItem(sessionName + 'permit', 'allow')
